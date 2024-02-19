@@ -1,5 +1,6 @@
 
 from pandas import read_csv
+import time
 
 data = read_csv('data/dataset1_Python+P7.csv')
 data = data[data['price'] > 0]
@@ -22,7 +23,7 @@ def knapsack(profits, prices, max_weight):
                 dp_table[i][w] = dp_table[i -1][w]
             else:
                 dp_table[i][w] = max(dp_table[i - 1][w],
-                                     (dp_table[i -1][w - prices[i - 1]] + int((profits[i -1] * prices[i - 1]))))
+                                     (dp_table[i -1][w - prices[i - 1]] + int(((profits[i -1]/100) * (prices[i - 1]/100))*100)))
     # Backtrack to find the selected items
     selected_items = []
     price_total = 0
@@ -38,11 +39,14 @@ def knapsack(profits, prices, max_weight):
 
 
 def main():
+    start_time = time.time()
     price_total, total_value, selected_items = knapsack(profits_list, prices_list, budget)
+    end_time = time.time() - start_time
 
     print("Total price:", price_total/100)
     print("Total value:", total_value/100)
     print("Selected items:", selected_items)
+    print("duration:", end_time)
 
 
 if __name__ == "__main__":

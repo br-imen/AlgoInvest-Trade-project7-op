@@ -2,7 +2,7 @@ from itertools import combinations
 from pandas import read_csv
 import time
 
-data = read_csv('data/dataset1_Python+P7.csv')
+data = read_csv('data/dataset1.csv')
 data = data[data['price'] > 0].to_dict(orient='records')
 MAX_COST = 100
 
