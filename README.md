@@ -1,4 +1,4 @@
-# Investment Data Comparison
+# AlgoInvest
 
 ## Description
 This project aims to compare two algorithms for selecting the best combination of investments, ensuring that the total cost does not exceed a specified budget. The project includes two algorithms: a brute-force algorithm and an optimized algorithm.
