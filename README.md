@@ -28,8 +28,8 @@ The optimized algorithm utilizes a dynamic programming approach known as the kna
 
 ## Project Structure
 - `data/`: Directory containing CSV files with investment data.
-- `brute_force.py`: Python script implementing the brute-force algorithm.
-- `optimized_algorithm.py`: Python script implementing the optimized algorithm.
+- `bruteforce.py`: Python script implementing the brute-force algorithm.
+- `optimized.py`: Python script implementing the optimized algorithm.
 - `README.md`: Documentation explaining the project, algorithms, and usage instructions.
 
 ## Usage
@@ -40,11 +40,11 @@ The optimized algorithm utilizes a dynamic programming approach known as the kna
    ```
 3. Run the brute-force algorithm:
    ```bash
-   python3 brute_force.py
+   python3 bruteforce.py
    ```
 4. Run the optimized algorithm:
    ```bash
-   python3 optimized_algorithm.py
+   python3 optimized.py
    ```
 
 ## Conclusion
